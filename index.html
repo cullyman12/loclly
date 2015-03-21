@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Loclly - find what's happening around!</title>
-    <script src="js/script.js"></script>
+    <title>Freelancer - Start Bootstrap Theme</title>
+
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -54,13 +54,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Search an Event</a>
+                        <a href="#portfolio">Search Event!</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Create an Event</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
                     <p class="hashtagsSuggestions"></p>
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <a href="#contact" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Create an Event
+                        <i class="fa fa-download"></i> Create an Event!
                     </a>
                     </div>
                 </div>
@@ -166,24 +166,77 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>About LocL</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>LocL is a mobile-first app that allows users to find events in their areas, based on their moods, activities and interests! All you have to do is tell <em>LocL</em> how you're feeling or what you want to do, and <em>LocL  </em> will let you know, instantly, what events are happening in your area! </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p>Not sure what you're looking for? Check out our "Popular Events" page! LocL uses a user-driven voting system to generate an ordered list of the hottest events in your area!  </p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+                
+            </div>
+        </div>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>LocL Events</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <p> Here is a list of some of (your area's) most anticipated events according to our users.</p>
                 </div>
             </div>
         </div>
+        <!--Event List -->
+        <div class="events">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="event_title">BlueMIX</h2>
+                    <h1> Sobey 278 </h1>
+                    <p> RIGHT NOW MOTHER******</p>
+                    <a href="http://thechronicleherald.ca/clubs/event/1273205-signal-hill"> Visit Web Page </a>
+                </div>
+            </div>
+        </div>
+        <div class="events">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="event_title">Signal Hill:</h2>
+                    <h1> The Lower Deck Pub</h1>
+                    <p> Wednesday, March 28th / 2015</p>
+                    <a href="http://thechronicleherald.ca/clubs/event/1273205-signal-hill"> Visit Web Page </a>
+                </div>
+            </div>
+        </div>
+        <div class="events">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="event_title">Red Bull Crashed Ice</h2>
+                    <h1> Citadel Hill </h1>
+                    <p> Friday, March 29th / 2015</p>
+                    <a href="http://thechronicleherald.ca/clubs/event/1273205-signal-hill"> Visit Web Page </a>
+                </div>
+            </div>
+        </div>
+        <div class="events">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="event_title">Kegger</h2>
+                    <h1> Brian's B'n'B Toronto </h1>
+                    <p> Every Friday!!!</p>
+                    <a href="http://thechronicleherald.ca/clubs/event/1273205-signal-hill"> Visit Web Page </a>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
     <!-- Contact Section -->
@@ -215,30 +268,27 @@
                             </div>
                         </div>
                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Date of the Event</label>
-                                <input type="date" class="form-control" placeholder="Date of Event" id="date" required data-validation-required-message="Please enter the date of this event.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+                            <div class="form-group col-xs-12 floating-label-form-group controls"
+                        <table>
+                            <tr>
+                                <td>Price of the Event</td>
+                                <td><input type="range" class="form-control" name="price" id="price" min="0" max="1000" step="1"></td>
+                                <td><p class="help-block text-danger"></p></td>
+                            </tr>
+                        </table>
+                        </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Price</label>
-                                <input type="number" class="form-control" placeholder="Price of the Event" id="price" min="0" max="1000" required data-validation-required-message="Please enter the price of this event.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Contact Number</label>
-                                <input type="tel" class="form-control" placeholder="Contact Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Description</label>
-                                <textarea rows="3" class="form-control" placeholder="Short Description of the Event" id="message" required data-validation-required-message="Please enter a description."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Short Description of the Event" id="message" required data-validation-required-message="Please enter a description."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
